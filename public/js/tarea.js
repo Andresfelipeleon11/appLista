@@ -111,7 +111,7 @@ $(document).ready(function(){
             dataType: 'JSON',
             data: null,
         }).done(function(json){
-            console.log(json)
+           
             var tabla;
             json.forEach(tarea => {
                 tabla+= `
