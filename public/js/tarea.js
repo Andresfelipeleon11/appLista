@@ -149,7 +149,7 @@ $(document).ready(function(){
 
 
 function seleccionar(tarea){
-    console.log(tarea)
+    
 
 
     const {id_tarea, nombre_tarea, descripcion_tarea, fecha_creacion, estado} = tarea;
