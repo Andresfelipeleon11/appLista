@@ -32,7 +32,6 @@ $(document).ready(function(){
                 dataType: 'JSON',
                 data: $('#FrmTarea').serialize(),
                }).done(function(json){
-                console.log(json)
                 alert('Tarea creada con exito');
                 setInterval('window.location.reload()', 2000);
                }).fail(function(error){
