@@ -34,7 +34,7 @@ public function __construct(\entidad\tareaEntidad $tareaE)
 
 public function listarTareas(){
     try{
-        $sql = "SELECT id_tarea,nombre_tarea,descripcion_tarea, fecha_creacion, estado from tareas WHERE estado = 'activo' ORDER BY id_tarea ASC;";
+        $sql = "SELECT id_tarea,nombre_tarea,descripcion_tarea, fecha_creacion, estado from tareas WHERE estado = 'activo' ORDER BY fecha_creacion ASC;";
         $result = $this->con->conexion->prepare($sql);
         $result->execute();
         $datos = $result->fetchAll(PDO::FETCH_ASSOC);

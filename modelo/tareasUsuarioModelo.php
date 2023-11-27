@@ -47,7 +47,7 @@ class tareasUsuarioM
     
             INNER JOIN usuario AS us
     
-            ON tareaU.id_usuario = us.id_usuario WHERE tar.estado = 'activo' AND tareaU.estado_tarea = 'pendiente' AND tareaU.id_usuario = :id_usuario ORDER BY id_tarea_usuario DESC";
+            ON tareaU.id_usuario = us.id_usuario WHERE tar.estado = 'activo' AND tareaU.estado_tarea = 'pendiente' AND tareaU.id_usuario = :id_usuario ORDER BY id_tarea_usuario ASC";
     
             $result = $this->con->conexion->prepare($sql);
             $result->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
