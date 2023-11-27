@@ -15,7 +15,6 @@ $(document).ready(function(){
             }).done(function(json){
                 alert('Se activo la Tarea');
                 listarTareasInactivas();
-                console.log(json)
                 $('#modalModificar').modal('hide');
 
             }).fail(function(error){
